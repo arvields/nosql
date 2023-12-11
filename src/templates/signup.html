@@ -1,0 +1,31 @@
+<style>
+    /* Add this style block within the head of your HTML document or in your AngularJS template */
+    .btn-violet {
+        background-color: #8E8FFA;
+        color: white; /* Optionally, set the text color to white for better contrast */
+    }
+
+    .btn-violet:hover {
+        background-color: #7752FE; /* Change the color on hover if desired */
+    }
+</style>
+
+<div class="row" ng-controller="SignUpController">
+    <div class="col-sm-6 col-md-4 col-md-offset-4">
+        <h1 class="text-center login-title">Create a New Account</h1>
+        <div class="account-wall">
+            <img class="profile-img" src="/img/photo.jpg" alt="">
+            <div growl></div>
+            <form class="form-signin" ng-submit="signUp()">
+                <input type="text" ng-model="firstName" class="form-control" placeholder="First Name" required autofocus />
+                <input type="text" ng-model="lastName" class="form-control" placeholder="Last Name" required />
+                <input type="text" ng-model="email" class="form-control" placeholder="Email" required />
+                <input type="password" ng-model="password" class="form-control" placeholder="Password" required />
+                <button class="btn btn-lg btn-violet btn-block" type="submit">Sign Up</button>
+                <a href="#" class="pull-right need-help">Need help? </a>
+                <span class="clearfix"></span>
+            </form>
+        </div>
+        <a href="/login" class="text-center new-account">Already Have an Account</a>
+    </div>
+</div>
