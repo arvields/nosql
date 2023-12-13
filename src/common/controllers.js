@@ -210,23 +210,15 @@
 				$scope.options = [
 					{
 						name: "Single Bed",
-						type: "basic",
+						type: "Basic",
 					},
 					{
 						name: "Double Bed",
-						type: "basic",
+						type: "Basic",
 					},
 					{
 						name: "Double Bed",
-						type: "deluxe",
-					},
-					{
-						name: "King Size Bed",
-						type: "Maharaja",
-					},
-					{
-						name: "Suite",
-						type: "Lake View",
+						type: "Deluxe",
 					},
 				];
 
